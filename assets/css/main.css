@@ -1,0 +1,273 @@
+body {
+    background-color: #414141;
+    margin: 0;
+    padding: 0;
+}
+  
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  background: #ffffff33;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.task-form-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-form-wpraper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #e9cd3d26;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.h2-main {
+  color: white;
+}
+
+span.error {
+  color: #ff8282;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.add-task-title {
+  width: 500px;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.add-task-description {
+    width: 500px;
+    height: 40px;
+    resize: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.add-task-deadline{
+  width: 160px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-is-done {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+.change-task-title {
+  width: 500px;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.change-task-description {
+    width: 500px;
+    height: 40px;
+    resize: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.change-task-deadline{
+  width: 160px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.change-task-is-done-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wrapper-for-buttons-edit {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.change-task-is-done {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.form-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+  width: 100%;
+}
+
+.task {
+  border: 2px dashed white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #ffffff57;
+}
+
+.task-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.task-description {
+  overflow-wrap: anywhere;
+  white-space: normal;
+  margin-bottom: 10px;
+}
+
+.task-datetime {
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  background: #0000008c;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.add-task-is-done-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.task-is-done {
+  margin-bottom: 10px;
+}
+
+span.task-is_done-green {
+  color: #007f00;
+  font-weight: bold;
+}
+
+span.task-is_done-red {
+  color: #b70e0e;
+  font-weight: bold;
+}
+
+form.login-wrapper,
+form.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #878787;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 100px;
+
+  button {
+    margin-top:20px;
+  }
+
+  a {
+    margin-top:50px;
+  }
+}
+
+button.button-delete {
+  border: 2px solid white;
+  margin-right: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  background: #7b2929;
+}
+
+button.button-change {
+  border: 2px solid white;
+  margin-right: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  background: #425c73;
+}
+
+button.add-task-add-task-button {
+  border: 2px solid white;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  background: #1c812e;
+  font-weight: bold;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+button.save-change-task-button{
+  border: 2px solid white;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  background: #1c812e;
+  font-weight: bold;
+}
+
+button.cancel-change-task-button {
+  border: 2px solid white;
+  margin-right: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  background: #7b2929;
+}
+
+  
