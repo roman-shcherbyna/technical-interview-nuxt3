@@ -49,6 +49,7 @@
     </div>
 
     <h2 class="h2-main">Lista zadań</h2>
+    <h3 aria-live="polite">Ilość zadań:{{ totalTasks }}</h3>
     <div v-for="task in tasks" :key="task.id" class="task">
       <div class="task-title">{{ task.title }}</div>
 
@@ -72,12 +73,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import * as yup from 'yup'
 import { useTasks } from '~/composables/useTasks'
 
+
 const { tasks, fetchTasks, deleteTask, updateTask } = useTasks()
+
+const totalTasks = computed(() => Array.isArray(tasks.value) ? tasks.value.length : 0)
 
 const schema = ref(null)
 onMounted(() => {
